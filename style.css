@@ -1,0 +1,294 @@
+/* === Futuristic Tech Blog Homepage === */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: #0a0a0a;
+  color: #e0e0e0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header */
+header {
+  background: linear-gradient(90deg, #0f0f0f, #101820);
+  color: #00f5ff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  border-bottom: 1px solid #00f5ff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+header h1 a {
+  color: #00f5ff;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav a {
+  color: #e0e0e0;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+nav a:hover {
+  color: #00f5ff;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #0a0a0a, #111827);
+  border-bottom: 1px solid #00f5ff22;
+}
+.hero h2 {
+  font-size: 2.4rem;
+  color: #00e6ff;
+  margin-bottom: 15px;
+}
+.hero p {
+  color: #b0b0b0;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Main */
+main {
+  padding: 50px 5%;
+}
+
+/* Section Headers */
+.boxed-section h2 {
+  font-size: 1.8rem;
+  color: #00e6ff;
+  margin-bottom: 25px;
+  border-left: 5px solid #00f5ff;
+  padding-left: 10px;
+}
+
+/* Grids */
+.box-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* Boxes */
+.box {
+  background: #101820;
+  border: 1px solid #00f5ff33;
+  border-radius: 15px;
+  padding: 25px;
+  text-decoration: none;
+  color: #e0e0e0;
+  transition: all 0.35s ease;
+  display: block;
+}
+.box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  border-color: #00f5ff;
+}
+
+.box h3 {
+  color: #00f5ff;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.box p {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+/* Buttons */
+.more-btn-container {
+  text-align: center;
+  margin-top: 30px;
+}
+.more-btn {
+  background: #00f5ff;
+  color: #000;
+  padding: 12px 35px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+.more-btn:hover {
+  background: #00ffff;
+  transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #0f0f0f;
+  padding: 25px;
+  border-top: 1px solid #00f5ff33;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(#00bcd4, #007bff);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(0, 255, 255, 0.1);
+}
+
+/* Animation */
+body {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeSlideIn 1.2s ease-out forwards;
+}
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* General Reset */
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
+  #nav-menu a {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #555/* filepath: c:\Users\Annointed\Downloads\Ift 203 project\style.css */
+
+  }
+   }
+/* General Reset */
+body, h1, h2, p, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #333;
+  color: #fff;
+}
+
+header h1 a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#nav-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+#nav-menu a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #444;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
+  #nav-menu a {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #555;
+   }
+
+  }

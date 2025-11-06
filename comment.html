@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog</title>
+    <link rel="stylesheet" href="post.css">
+</head>
+<body>
+    <script src="about.js"></script>
+
+    <div class="menu-icon" onclick="toggleMenu()">☰</div>
+
+
+    <!-- Header -->
+    <header>
+      <h1><a href="index.html">Tech Blog</a></h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="comment.html">Comments</a>
+        <a href="teams.html">Meet Our TEAM</a>
+      </nav>
+    </header>
+  
+    <!-- Contact Page -->
+    <main class="about-page">
+      <section class="intro">
+        <h2>Your Comment On Our Website</h2>
+        <p>
+          We’d love to hear from you! Whether you have questions, suggestions, or partnership ideas, 
+          feel free to reach out. Our team is always ready to connect and collaborate.
+        </p>
+      </section>
+  
+      <!-- Contact Form -->
+      <section class="contact-form">
+        <h3>Send Us a Message</h3>
+        <form action="https://formsubmit.co/adewunmidarasimi5@gmail.com" method="POST">
+          <label for="name">Full Name</label><br />
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br /><br />
+  
+          <label for="email">Email</label><br />
+          <input type="email" id="email" name="email" placeholder="Enter your email" required /><br /><br />
+  
+          <label for="message">Comment</label><br />
+          <textarea id="message" name="message" rows="5" placeholder="Write your comment..." required></textarea><br /><br />
+
+          <button type="submit" class="btn">We'd Love Your Comment!</button>
+        </form>
+      </section>
+    </main>
+    <script>
+        // Function to toggle the navigation menu
+    function toggleMenu() {
+      const navMenu = document.getElementById('nav-menu');
+      navMenu.classList.toggle('active');
+    }
+      </script>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Tech Blog — All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
