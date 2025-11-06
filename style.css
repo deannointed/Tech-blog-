@@ -234,6 +234,19 @@ header h1 a {
     border-bottom: 1px solid #555/* filepath: c:\Users\Annointed\Downloads\Ift 203 project\style.css */
 
   }
+
+  /* Header Styles */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
    }
 /* General Reset */
 body, h1, h2, p, a {
@@ -300,6 +313,18 @@ header h1 a {
    }
 
 
+  /* Header Styles */
+header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
   }
 
 
@@ -350,9 +375,8 @@ header h1 a {
   #nav-menu a:last-child {
     border-bottom: none;
   }
-}
 
-/* Header Styles */
+  /* Header Styles */
 header {
   position: relative;
   display: flex;
@@ -362,3 +386,7 @@ header {
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+
+}
+
